@@ -113,20 +113,20 @@ function playerMoveDecider(value){
 }
 
 
-rockButtonElement.onclick = function (){
+rockButtonElement.addEventListener('click', () => {
     computerMoveDecider();
     playerMoveDecider('rock');
-}
+});
 
-paperButtonElement.onclick = function (){
+paperButtonElement.addEventListener('click', () => {
     computerMoveDecider();
     playerMoveDecider('paper');
-}
+});
 
-scissorsButtonElement.onclick = function (){
+scissorsButtonElement.addEventListener('click', () => {
     computerMoveDecider();
     playerMoveDecider('scissors');
-}
+});
 
 resetScoreElement.onclick = function (){
     score.wins = 0;
