@@ -128,7 +128,7 @@ scissorsButtonElement.addEventListener('click', () => {
     playerMoveDecider('scissors');
 });
 
-resetScoreElement.onclick = function (){
+resetScoreElement.addEventListener('click', () => {
     score.wins = 0;
     score.losses = 0;
     score.ties = 0;
@@ -136,7 +136,7 @@ resetScoreElement.onclick = function (){
     resultElement.innerText = ``;
     yourMoveElement.innerText = ``;
     computerMoveElement.innerText = ``;
-}
+});
 
 
 
